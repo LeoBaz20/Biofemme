@@ -33,7 +33,11 @@
             <div class="accordion-item">
                 <a href="#" class="accordion-toggle"> <i class="fa-solid fa-caret-right"></i>&nbsp;INGREDIENTES BIO-ACTIVOS </a>
                 <div class="accordion-content">
-                    <p>Contiene extractos naturales de plantas, ácido hialurónico y péptidos para mejorar la textura y firmeza de la piel.</p>
+                    <p>1. Tens' UP™</p>
+                    <p>2. Neosome EM Ultrafill</p>
+                    <p>2. Partículas "Soft Focus"</p>
+                    <br>
+                    <a href="https://compras.biofemme.com.ec/producto/lifting-serum-serum-tensor/#como-actuan">Conoce cómo actúan cada uno de ellos</a>
                 </div>
             </div>
         </div>

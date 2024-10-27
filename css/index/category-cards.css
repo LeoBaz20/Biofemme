@@ -13,6 +13,7 @@
     flex: 1 1 18%;
     max-width: 18%;
     height: 500px;
+    cursor: pointer;
     overflow: hidden;
     background-color: #f5b3bb;
     background-size: cover;

@@ -187,9 +187,16 @@
 
 .accordion-content {
     display: none;
-    font-size: 0.85em;
+    font-size: 0.90em;
     color: #333;
     padding: 10px 0;
+}
+
+.accordion-content a {
+    font-size: 1em;
+    color: #919191;
+    padding: 10px 0;
+    text-decoration: underline;
 }
 
 .accordion-item.active .accordion-content {

@@ -18,38 +18,37 @@
     color: #db8993;
 }
 
-/* Estilos para el menú desplegable */
 .nav-dropdown {
     position: relative;
 }
 
 .nav-dropdown-content {
-    display: none; /* Oculto por defecto */
     position: absolute;
-    top: 250%;
-    left: -200%;
-    background: linear-gradient(to right, #db8993, #f0b5b9); /* Degradado de izquierda a derecha */
+    top: 300%; /* Ajusta para que aparezca más abajo del enlace */
+    left: -200%; /* Ajusta para que aparezca más a la izquierda */
+    background: linear-gradient(to right, #db8993, #f0b5b9); 
     padding: 20px 30px;
     min-width: 700px;
     color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none; /* Desactiva la interacción inicialmente */
+    visibility: hidden;
     
-    /* Ajustes de flexbox para columnas uniformes */
     display: flex;
     justify-content: space-between;
 }
 
-.nav-dropdown:hover .nav-dropdown-content {
-    display: flex; /* Mostrar el menú al hacer hover en "PRODUCTOS" */
+/* Cuando la clase visible está presente, el menú aparece */
+.nav-dropdown-content.visible {
     opacity: 1;
-    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .nav-dropdown-column {
-    width: 33%; /* Cada columna ocupa un tercio del espacio */
+    width: 33%; 
     display: flex;
     flex-direction: column;
 }
@@ -57,17 +56,17 @@
 .nav-dropdown-title {
     margin: 0;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 300;
     color: #ffffff;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .nav-dropdown-link {
-    display: block; /* Asegura que cada enlace ocupe toda la línea */
+    display: block;
     color: #fff;
     text-decoration: none;
-    margin-bottom: 8px; /* Espaciado entre los enlaces */
+    margin-bottom: 8px; 
     font-size: 16px;
     border-bottom: 1px solid #fff;
 }
@@ -78,7 +77,7 @@
     right: 30px;
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 14px;
 }
 

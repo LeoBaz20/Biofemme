@@ -7,7 +7,7 @@ const products = [
         price: "$11.9 - $19.00",
         image: "images/producto5.jpg",
         badge: "",
-        link: "/biofemme/producto.php?id=1"
+        link: "https://compras.biofemme.com.ec/producto/luminous-eye-serum-contorno-de-ojos-iluminador/"
     },
     {
         name: "REJUVENATING SERUM",
@@ -16,7 +16,7 @@ const products = [
         price: "$29.90",
         image: "images/producto6.jpg",
         badge: "",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/eye-makeup-remover-desmaquillante-bifasico-de-ojos/"
     },
     {
         name: "CLEAN SKIN MASK",
@@ -25,7 +25,7 @@ const products = [
         price: "$12.96",
         image: "images/producto7.jpg",
         badge: "",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/eau-micellaire-agua-micelar/"
     },
     {
         name: "HIDRAPURE GEL-CREAM",
@@ -34,7 +34,7 @@ const products = [
         price: "$21.57",
         image: "images/producto8.jpg",
         badge: "",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/clean-skin-mask-mascarilla-exfoliante/"
     }
 ];
 
@@ -45,7 +45,7 @@ function generateProductCards() {
 
     products.forEach(product => {
         productHTML += `
-            <div class="product-card">
+            <div class="product-card" onclick="window.location.href='${product.link}'">
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.name}">
                     ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}

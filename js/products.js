@@ -16,7 +16,7 @@ const products = [
         price: "$24.64",
         image: "images/producto2.jpg",
         badge: "",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/sunscreen-50-bloqueador-solar-50/"
     },
     {
         name: "BIO BEAUTY OIL",
@@ -25,7 +25,7 @@ const products = [
         price: "$16.42",
         image: "images/producto3.jpg",
         badge: "",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/bio-beauty-oil-aceite-seco-hidratante/"
     },
     {
         name: "BIOFEMME MINI KIT",
@@ -34,7 +34,7 @@ const products = [
         price: "<span class='old-price'>$20.70</span> $15.00",
         image: "images/producto4.jpg",
         badge: "Promoción",
-        link: "#"
+        link: "https://compras.biofemme.com.ec/producto/biofemme-mini-kit/"
     }
 ];
 
