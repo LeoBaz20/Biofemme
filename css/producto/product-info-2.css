@@ -1,0 +1,129 @@
+.wave-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-container svg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+
+.ingredients-section {
+    background-color: #fff0f4;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1; 
+}
+
+
+.ingredients-section::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff0f4;
+    border-radius: 50% 50% 0 0;
+    transform: scaleX(2); 
+    z-index: -1; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-column {
+    width: 25%; 
+    padding-right: 20px; 
+}
+
+.left-column h2 {
+    font-size: 1.8em;
+    color: #707070;
+    font-weight: 250;
+}
+
+.right-column {
+    width: 70%;
+    text-align: center; 
+}
+
+.ingredient {
+    margin-bottom: 30px;
+}
+
+.ingredient h3 {
+    font-size: 1em;
+    font-weight: 300;
+    color: #6d6d6d;
+    text-align: left;
+}
+
+.ingredient p {
+    font-size: 1em;
+    color: #6d6d6d;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.learn-more-link {
+    display: inline-block;
+    font-size: 1em;
+    color: #d66475;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #d66475;
+    border-top: 1px solid #d66475;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%; 
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .left-column h2 {
+        font-size: 1.4em;
+        color: #707070;
+        font-weight: 350;
+    }
+
+    .left-column {
+        margin-bottom: 20px; 
+    }
+
+    .ingredient h3 {
+        text-align: justify; 
+    }
+
+    .ingredient p {
+        text-align: justify; 
+    }
+
+    .learn-more-link {
+        font-size: 0.8em;
+        text-align: center;
+        display: block;
+        margin: 50px auto;
+    }
+}

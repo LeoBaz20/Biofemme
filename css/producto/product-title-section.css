@@ -1,0 +1,19 @@
+.section {
+    text-align: center;
+    background-color: #fff0f4;
+    padding: 10px; 
+}
+
+.section h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #666666; 
+    margin-bottom: 5px; 
+}
+
+.section p {
+    font-size: 1.5em;
+    font-weight: 250;
+    color: #6d6d6d; 
+    margin-top: 5px; 
+}

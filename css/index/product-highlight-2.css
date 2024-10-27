@@ -1,0 +1,78 @@
+/* Contenedor General de la Sección */
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 50px;
+    background-image: url('../../images/movil-banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; 
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.banner-column {
+    flex: 1;
+}
+
+.banner-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.banner-text-right h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.banner-text-right p {
+    font-size: 18px;
+}
+
+/* Botón */
+.btn-view-all-2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-top: 1px solid #949494;
+    border-bottom: 1px solid #949494;
+    color: #949494;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsivo para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .banner-section {
+        background-image: url('../../images/movil-banner-small.jpg'); 
+        flex-direction: column;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .banner-text-right {
+        align-items: flex-end; 
+        text-align: right; 
+        padding: 10px;
+    }
+
+    .banner-text-right h2, .banner-text-right p, .btn-view-all-2 {
+        align-self: right; 
+    }
+
+    .banner-text-right h2 {
+        font-size: 18px;
+    }
+
+    .banner-column {
+        flex: none;
+        width: 100%;
+    }
+}

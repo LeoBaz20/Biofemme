@@ -1,0 +1,87 @@
+.main-nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.main-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #db8993;
+}
+
+/* Estilos para el menú desplegable */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-content {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 250%;
+    left: -200%;
+    background: linear-gradient(to right, #db8993, #f0b5b9); /* Degradado de izquierda a derecha */
+    padding: 20px 30px;
+    min-width: 700px;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    
+    /* Ajustes de flexbox para columnas uniformes */
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: flex; /* Mostrar el menú al hacer hover en "PRODUCTOS" */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-dropdown-column {
+    width: 33%; /* Cada columna ocupa un tercio del espacio */
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-dropdown-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-dropdown-link {
+    display: block; /* Asegura que cada enlace ocupe toda la línea */
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px; /* Espaciado entre los enlaces */
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-dropdown-biofemme-link {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-dropdown-biofemme-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,172 @@
+/* Contenedor General */
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+/* Estilo de Cada Tarjeta */
+.category-card {
+    position: relative;
+    flex: 1 1 18%;
+    max-width: 18%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #f5b3bb;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen de la Tarjeta */
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Texto Sobre la Imagen */
+.card-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Ajustes Responsivos para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .category-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .category-cards {
+        padding: 5px;
+    }
+
+    .category-card img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .category-card.align-left .card-text {
+        font-size: 1.2em;
+        left: 10px;
+        top: 50%;
+        padding-left: 40px;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+
+    .category-card.align-right .card-text {
+        font-size: 1.2em;
+        right: 10px;
+        top: 50%;
+        padding-right: 40px;
+        transform: translateY(-50%);
+        text-align: right;
+    }
+}
+
+/* Ajustes Responsivos para Pantallas Medianas */
+@media (min-width: 769px) and (max-width: 992px) {
+    .category-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .category-cards {
+        padding: 10px;
+    }
+
+    .category-card.align-left .card-text {
+        font-size: 1.2em;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .category-card.align-right .card-text {
+        font-size: 1.2em;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: right;
+    }
+}
+
+/* Ajustes para Pantallas Grandes */
+@media (min-width: 1200px) {
+    .category-card:nth-child(1) {
+        background-image: url('../../images/categoria-Limpieza-front.jpg');
+        transition: background-image 0.5s ease;
+    }
+
+    .category-card:nth-child(1):hover {
+        background-image: url('../../images/categoria-Limpieza-hover.jpg');
+    }
+
+    .category-card:nth-child(2) {
+        background-image: url('../../images/categoria-hidratacion-fornt.jpg');
+        transition: background-image 0.5s ease;
+    }
+
+    .category-card:nth-child(2):hover {
+        background-image: url('../../images/categoria-hidratacion-hover.jpg');
+    }
+
+    .category-card:nth-child(3) {
+        background-image: url('../../images/categoria-proteccion-front.jpg');
+        transition: background-image 0.5s ease;
+    }
+
+    .category-card:nth-child(3):hover {
+        background-image: url('../../images/categoria-proteccion-hover.jpg');
+    }
+
+    .category-card:nth-child(4) {
+        background-image: url('../../images/categoria-Proage-front.jpg');
+        transition: background-image 0.5s ease;
+    }
+
+    .category-card:nth-child(4):hover {
+        background-image: url('../../images/categoria-Proage-hover.jpg');
+    }
+
+    .category-card:nth-child(5) {
+        background-image: url('../../images/categoria-acne-front.jpg');
+        transition: background-image 0.5s ease;
+    }
+
+    .category-card:nth-child(5):hover {
+        background-image: url('../../images/categoria-acne-hover.jpg');
+    }
+
+    .category-card img {
+        display: none;
+    }
+
+    .category-card {
+        height: 500px;
+    }
+
+    .category-cards {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,77 @@
+/* Estilo General para la Sección */
+.biofemme-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-image: url('../../images/ver-productos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las Columnas */
+.biofemme-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Columna de Texto */
+.biofemme-text {
+    text-align: center;
+    color: #B16B78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Título de la Sección */
+.biofemme-text h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+/* Botón Ver Todos */
+.btn-view-all {
+    display: inline-block;
+    padding: 10px 30px;
+    border-top: 1px solid #B16B78;
+    border-bottom: 1px solid #B16B78;
+    color: #B16B78;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Estilos Responsivos para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    .biofemme-section {
+        flex-direction: column;
+        padding: 20px;
+        height: 250px;
+        background-image: url('../../images/ver-productos-small.jpg');
+    }
+
+    .biofemme-text {
+        align-items: flex-start; 
+        text-align: left;
+        padding: 10px;
+    }
+
+    .biofemme-text h2 {
+        font-size: 1.5em;
+    }
+
+    .btn-view-all {
+        font-size: 0.8em;
+        padding: 7px 15px;
+    }
+}

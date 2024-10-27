@@ -1,0 +1,90 @@
+.reviews-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.reviews-section h2 {
+    font-size: 1.8em;
+    color: #707070;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.product-rating h3 {
+    font-size: 1.2em;
+    color: #d66475;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.stars {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.stars span {
+    display: inline-block;
+    color: #ccc; 
+}
+
+.no-reviews {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.review-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+.review-box h2 {
+    font-size: 1.6em;
+    color: #000000;
+}
+
+.review-box p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.review-box a {
+    color: #d66475;
+    text-decoration: none;
+}
+
+.review-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .reviews-section h2 {
+        font-size: 1.4em;
+    }
+
+    .product-rating h3 {
+        font-size: 1em; 
+    }
+
+    .stars {
+        font-size: 1.2em; 
+    }
+
+    .no-reviews {
+        font-size: 0.8em; 
+    }
+
+    .review-box {
+        font-size: 0.8em; 
+    }
+
+    .review-box h2 {
+        font-size: 1.3em; 
+    }
+}
